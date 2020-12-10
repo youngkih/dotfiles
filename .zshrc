@@ -8,13 +8,7 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/will/.oh-my-zsh"
-
-# Set alias for aws
-#alias awsload='aws-vault exec --assume-role-ttl=60m load --'
-alias awsload='aws-vault exec --assume-role-ttl=60m dev-load --'
-#alias awsterragrunt='aws-vault exec --assume-role-ttl=60m terragrunt --'
-alias awsterragrunt='aws-vault exec --assume-role-ttl=60m terragrunt-load --'
+export ZSH="/Users/youngkih/.oh-my-zsh"
 
 # Set alias for docker
 alias dc='docker container'
