@@ -3,12 +3,8 @@
 
 export PATH="/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# Set path for Golang
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/go
-
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/youngkih/.oh-my-zsh"
+export ZSH="/Users/$(id -un)/.oh-my-zsh"
 
 # Set alias for docker
 alias dc='docker container'
@@ -109,6 +105,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# For M1 chip mac
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 tmux attach -t 0
 
